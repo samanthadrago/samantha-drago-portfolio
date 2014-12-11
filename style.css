@@ -1,0 +1,315 @@
+/* ----- whole site ----- */
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: white;
+
+}
+
+a {
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Muli', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+img.bg {
+  /*min-height: 100%;*/
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+/* ----- nav bar ----- */
+
+img.me {
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 10px;
+  float: left;
+  transition: opacity 0.5s ease;
+}
+
+.nav ul {
+  list-style: none;
+  display: inline;
+  float: right;
+  margin-right: 15px;
+}
+
+.nav li {
+  display: inline;
+  margin: 15px;
+  font-size: 25px;
+  transition: background-color 0.5s ease;
+}
+
+.nav li:hover {
+  border-bottom: 2px solid white;
+  background-color: #3D8EB9;
+}
+
+.hover {
+  border-bottom: 2px solid white;
+  background-color: #3D8EB9;
+}
+
+/*.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}*/
+
+.greetings {
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  clear: both;
+  padding-top: 75px;
+}
+
+
+.slideUp{
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  50%{
+    transform: translateY(-8%);
+  }
+  95%{
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  50%{
+    -webkit-transform: translateY(-8%);
+  }
+  95%{
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.opaque {
+  opacity: 0.5;
+}
+
+/* ----- about ----- */
+
+.about {
+  width: 100%;
+  padding-top: 75px;
+  clear: both;
+  text-align: center;
+}
+
+.invisible {
+  display: none;
+}
+
+img.big-me {
+  border-radius: 5%;
+  border: 2px solid white;
+  display: inline;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.about-text{
+  background-color: white;
+  border-radius: 5px;
+  display: inline;
+  margin-left: 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  color: #3D8EB9;
+}
+
+.about-text p {
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.5;
+}
+
+
+/* ----- projects ----- */
+
+
+.projects {
+  width: 100%;
+  padding-top: 75px;
+  clear: both;
+  padding: 10px;
+}
+
+.projects-container {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: black;
+}
+
+.project-row {
+  border-bottom: 2px solid gray;
+  margin: 10px;
+}
+
+.project-description {
+  display: inline-block;
+  width: 50%;
+}
+
+.project-description a:hover {
+  color: white;
+  background-color: #3D8EB9;
+}
+
+.project-row img {
+  border: 2px solid gray;
+  margin: 5px;
+  width: 45%;
+}
+
+.projects h2 {
+  color: #3D8EB9;
+}
+
+/* ----- experience ----- */
+
+
+.experience {
+  width: 100%;
+  padding-top: 75px;
+  clear: both;
+  padding: 10px;
+}
+
+.experience-container {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: black;
+  padding: 10px;
+}
+
+.experience-header {
+  text-align: center;
+  color: #3D8EB9;
+  border-bottom: 4px solid black;
+}
+
+.experience h2{
+  color: #3D8EB9;
+}
+
+ul.icons{
+  list-style: none;
+  display: inline;
+}
+
+.icons li {
+  display: inline;
+  margin: 15px;
+}
+
+.experience span {
+  color: #3D8EB9;
+  font-size: 20px;
+}
+
+/* ----- blog ----- */
+
+
+.blog {
+  width: 100%;
+  padding-top: 75px;
+  clear: both;
+  padding: 10px;
+}
+
+.blog-container {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.blog h2 {
+  color: #3D8EB9;
+}
